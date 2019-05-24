@@ -2,6 +2,10 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.3'
+#gem "fog"
+#gem 'carrierwave'
+#gem "fog'"
+gem "carrierwave-aws"
 gem "mini_magick"
 gem 'jquery-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -70,4 +74,5 @@ end
 
 gem 'simple_form'
 gem 'carrierwave', '~> 1.0'
+gem 'carrierwave-aws'
 
