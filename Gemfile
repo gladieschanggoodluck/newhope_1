@@ -75,4 +75,5 @@ end
 gem 'simple_form'
 gem 'carrierwave', '~> 1.0'
 gem 'carrierwave-aws'
+gem "fog-aws"
 

@@ -1,0 +1,7 @@
+#User name Password,  Access key ID, Secret access key, Console login link
+#GLADIES-CHANG,, AKIA5QNTXSMEIG5WCT7X,  XdytmU86XyWlY4AuWBGdPEk4ocI0RGdmf3S5yeXi,  https://928626742024.signin.aws.amazon.com/console
+
+AWS_SECRET_KEY: "XdytmU86XyWlY4AuWBGdPEk4ocI0RGdmf3S5yeXi"
+AWS_BUCKET: "my-bucket-gladies"
+AWS_BUCKET:     "Your-bucket"
+AWS_REGION:     "us-east-1"

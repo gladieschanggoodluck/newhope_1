@@ -1,39 +1,18 @@
-class ImageUploader < CarrierWave::Uploader::Base
+class VideoUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
-  include CarrierWave::MiniMagick
+  # include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
-  #uploader = ImageUploader.new
-  #uploader.image = params[:file] # Assign a file like this, or
-
-  # like this
-  #File.open('somewhere') do |f|
-  #uploader.image = f
-  #end
-  #uploader.store!(my_file)
-
-  #uploader.store!(my_file)
-
-  #uploader.retrieve_from_store!('my_file.png')
-
   #storage :file
   storage :aws
-  process resize_to_fill: [800, 350]
+
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
   def store_dir
-     'public/my/upload/directory'
-    #{}"uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
-  end
- 
-  def cache_dir
-    '/tmp/projectname-cache'
+    "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
-  def extension_whitelist
-    %w(jpg jpeg gif png)
-  end
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url(*args)
   #   # For Rails 3.1+ asset pipeline compatibility:
